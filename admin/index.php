@@ -3618,43 +3618,57 @@
 														echo "
 															<tr>
 																<td style='width:30px'>$soal[nomor]</td>
-																<td>$soal[soal]";
-																if(! $soal['pilA']=="")
-																{ 
-																echo "
-																<table width=100% border=0>
-																<tr>											
-																
-																<td width=4px valign=top>A.</td>
-																<td width=300px colspan=2 valign=top> $soal[pilA]</td>
-										
-																<td width=30px valign=top>&nbsp;</td>
-																<td width=4px valign=top>C.</td>
-																<td width=300px colspan=2 valign=top> $soal[pilC] </td>
-											
-																<td width=30px valign=top>&nbsp;</td>
-																<td width=4px valign=top>E.</td>
-																<td width=300px colspan=2 valign=top> $soal[pilE] </td>
-																<td width=30px valign=top>&nbsp;</td>
-																</tr>
-																<tr>
-																
-																<td width=4px valign=top>B.</td>
-																<td width=300px colspan=2 valign=top>$soal[pilB]</td>			
-																<td width=30px>&nbsp;</td>
-																<td width=4px valign=top>D.</td>
-																<td width=300px colspan=2 valign=top>$soal[pilD] </td>	
-																</tr>
-																</table>
-																		";
+																<td>";
+																if($soal['file']<>'') {
+																		$audio = array('mp3','wav','ogg','MP3','WAV','OGG');
+																		$image = array('jpg','jpeg','png','gif','bmp','JPG','JPEG','PNG','GIF','BMP');
+																		$ext = explode(".",$soal['file']);
+																		$ext = end($ext);
+																		if(in_array($ext,$image)) {
+																			echo "
+																				
+																				<img src='$homeurl/files/$soal[file]' style='max-width:200px;'/>
+																			";
+																		}
+																		elseif(in_array($ext,$audio)) {
+																			echo "
+																				
+																				<audio controls><source src='$homeurl/files/$soal[file]' type='audio/$ext'>Your browser does not support the audio tag.</audio>
+																			";
+																		} else {
+																			echo "File tidak didukung!";
+																		}
+																		
 																}
+																if($soal['file1']<>'') {
+																		$audio = array('mp3','wav','ogg','MP3','WAV','OGG');
+																		$image = array('jpg','jpeg','png','gif','bmp','JPG','JPEG','PNG','GIF','BMP');
+																		$ext = explode(".",$soal['file1']);
+																		$ext = end($ext);
+																		if(in_array($ext,$image)) {
+																			echo "
+																				
+																				<img src='$homeurl/files/$soal[file1]' style='max-width:200px;'/>
+																			";
+																		}
+																		elseif(in_array($ext,$audio)) {
+																			echo "
+																				
+																				<audio controls><source src='$homeurl/files/$soal[file1]' type='audio/$ext'>Your browser does not support the audio tag.</audio>
+																			";
+																		} else {
+																			echo "File tidak didukung!";
+																		}
+																} 
 																echo "
+																$soal[soal]
+																		
 																</td>
 																<td style='width:30px'>
 																<a><button class='btn btn-danger btn-sm' data-toggle='modal' data-target='#hapus$soal[nomor]'><i class='fa fa-trash-o'></i></button></a>
 																</td>
 																</tr>
-														";
+													";
 													$info = info("Anda yakin akan menghapus soal ini  ?");
 													if(isset($_POST['hapus'])) {
 													$exec = mysql_query("DELETE  FROM soal WHERE id_soal = '$_REQUEST[idu]'");
