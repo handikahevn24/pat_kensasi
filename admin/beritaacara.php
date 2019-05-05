@@ -30,7 +30,7 @@
 						<td rowspan='7' width='150' align='center'><img src='$homeurl/$setting[logo]' width='65'></td>
 						</tr>
 						 <tr>
-						<td colspan='2' align='center'><font size='+1'><b>UJIAN BERBASIS KOMPUTER (UBK)</b></font></td>
+						<td colspan='2' align='center'><font size='+1'><b>UJIAN BERBASI ANDROID</b></font></td>
 						</tr>
 						<tr>
 						<td colspan='2' align='center'><font size='+1'><b>TAHUN PELAJARAN $ajaran</b></font></td>
