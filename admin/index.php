@@ -3753,7 +3753,7 @@
                                         $pilC = addslashes($data->val($i,5));
                                         $pilD = addslashes($data->val($i,6));
                                         $pilE = addslashes($data->val($i,7));
-                                        $jawaban = $data->val($i,8);
+                                        $jawaban = strtoupper($data->val($i,8));
 										$jenis = $data->val($i,9);
 										$file1 = $data->val($i,10);
 										$file2 = $data->val($i,11);
