@@ -78,6 +78,7 @@
 	<th width="5%" style="text-align: center;">No.</th>
 	<th width="13%" style="text-align: center;">No. Ujian</th>
 	<th width="30%" style="text-align: center;">Nama Siswa</th>
+	<th width="12%" style="text-align: center;">Kelas</th>
 	<th width="24%"style="text-align: center;">Tanda Tangan</th>
 	<th colspan="2" width="7%" style="text-align: center;">Ket</th>
 	</tr>';
@@ -108,6 +109,7 @@
 	  <td align='center'>&nbsp;$nomer.</td>
 	  <td align='center'>$f[nis]</td>
 	  <td>&nbsp;$f[nama]</td>
+	  <td>&nbsp;$f[id_kelas]</td>
 	  <td align='center'>&nbsp;$nomer.</td>
 	  <td align='center'>&nbsp;</td>
 	  </tr>";
@@ -116,6 +118,7 @@
 	  <td align='center'>&nbsp;$nomer.</td>
 	  <td align='center'>$f[nis]</td></center>
 	  <td>&nbsp;$f[nama]</td>
+	  <td>&nbsp;$f[id_kelas]</td>
 	  <td align='left'>&nbsp;$nomer.</td>
 	  <td align='center'>&nbsp;</td>
 	  </tr>";
