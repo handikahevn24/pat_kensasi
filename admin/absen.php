@@ -37,7 +37,7 @@
 	<td  width="70" align="left"><img src="../'.$setting['logo'].'"  height=80></td>
     <td>
 	<b><center><font size="+1">DAFTAR HADIR PESERTA </font>
-    <br><font size="+1">UJIAN SEKOLAH BERBASIS KOMPUTER / ANDROID </font>
+    <br><font size="+1">PENILAIAN AKHIR TAHUN BERBASIS ANDROID </font>
     <br><font size="+1"><b>TAHUN PELAJARAN : '. $ajaran.'</b></font>
 	</b>
 	</center>

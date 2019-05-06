@@ -1035,7 +1035,7 @@
 						<td rowspan='7' width='150' align='center'><img src='$homeurl/$setting[logo]' width='65'></td>
 						</tr>
 						 <tr>
-						<td colspan='2' align='center'><font size='+1'><b>UJIAN SEKOLAH BERSTANDAR NASIONAL KOMPUTER / ANDROID (USBN K/A)</b></font></td>
+						<td colspan='2' align='center'><font size='+1'><b>Penilaian Akhir Tahun (PAT) Berbasis Android</b></font></td>
 						</tr>
 						<tr>
 						<td colspan='2' align='center'><font size='+1'><b>TAHUN PELAJARAN $ajaran</b></font></td>
@@ -1045,7 +1045,7 @@
 						<table border='0' width='95%' align='center' >
 						<tr height='30'>
 						<td height='30' colspan='4' style='text-align: justify;'>Pada hari ini <b> $hari </b>  tanggal <b>$tanggal</b> bulan <b>$bulan</b> tahun <b>$tahun</b>
-						, di $setting[sekolah] telah diselenggarakan Ujian Sekolah Berbasis Komputer (USBK) untuk Mata Pelajaran <b>$ujian[nama]</b> dari pukul <b>".substr($ujian['waktu_ujian'],0,5)."</b> sampai dengan pukul <b>".substr($ujian['selesai_ujian'],0,5)."</b></td>
+						, di $setting[sekolah] telah diselenggarakan Penilaian Akhir Tahun (PAT) untuk Mata Pelajaran <b>$ujian[nama]</b> dari pukul <b>".substr($ujian['waktu_ujian'],0,5)."</b> sampai dengan pukul <b>".substr($ujian['selesai_ujian'],0,5)."</b></td>
 						</tr>
 						</table>
 						<table border='0' width='95%' align='center'>
@@ -1093,7 +1093,7 @@
 						<td height='30' width='10px'></td></tr>    
 						<tr height='30'>
 						<td height='30' width='5%'>2.</td>
-						<td colspan='2' height='30' width='30%'>Catatan selama Ujian Sekolah Berstandar Nasional Komputer / Android (USBN K/A) </td>
+						<td colspan='2' height='30' width='30%'>Catatan selama Penilaian Akhir Tahun (PAT) </td>
 						</tr>
 						<tr height='120px'>
 						<td height='30' width='5%'></td>

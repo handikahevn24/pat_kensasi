@@ -45,7 +45,7 @@
 				<div class='garis'></div>
 				<br/>
 				<div align='center'>
-					<b>NILAI UJIAN BERBASIS KOMPUTER</b><br/>
+					<b>NILAI PAT Berbasis Android</b><br/>
 					<b>MATA PELAJARAN ".strtoupper($mapel['nama'])."</b><br/>
 					<b>TAHUN AJARAN $ajaran</b><br/>
 				</div>

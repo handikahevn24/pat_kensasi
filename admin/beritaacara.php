@@ -40,7 +40,7 @@
 						<table border='0' width='95%' align='center' >
 						<tr height='30'>
 						<td height='30' colspan='4' style='text-align: justify;'>Pada hari ini <b> $hari </b>  tanggal <b>$tanggal</b> bulan <b>$bulan</b> tahun <b>$tahun</b>
-						, di $setting[sekolah] telah diselenggarakan Ujian Sekolah Berbasis Komputer (USBK) untuk Mata Pelajaran <b>$ujian[nama]</b> dari pukul ".substr($ujian['waktu_ujian'],0,5)." sampai dengan pukul ".substr($ujian['selesai_ujian'],0,5)."</td>
+						, di $setting[sekolah] telah diselenggarakan Penilaian Akhir Tahun (PAT) untuk Mata Pelajaran <b>$ujian[nama]</b> dari pukul ".substr($ujian['waktu_ujian'],0,5)." sampai dengan pukul ".substr($ujian['selesai_ujian'],0,5)."</td>
 						</tr>
 						</table>
 						<table border='0' width='95%' align='center'>
@@ -88,7 +88,7 @@
 						<td height='30' width='10px'></td></tr>    
 						<tr height='30'>
 						<td height='30' width='5%'>2.</td>
-						<td colspan='2' height='30' width='30%'>Catatan selama Ujian Berbasis Komputer (UBK) </td>
+						<td colspan='2' height='30' width='30%'>Catatan selama Ujian Berbasis Android</td>
 						</tr>
 						<tr height='120px'>
 						<td height='30' width='5%'></td>
