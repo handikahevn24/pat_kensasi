@@ -1829,7 +1829,7 @@
 											</div><!-- /.box -->
 										</div>
 									</div>
-									<iframe id='loadabsen' name='frameresult' src='absen.php' style='border:none;width:0px;height:0px;'></iframe>";
+									<iframe id='loadabsen' name='frameresult' src='absen2.php' style='border:none;width:0px;height:0px;'></iframe>";
 								
 								
 							}
@@ -4328,7 +4328,7 @@
 						var idmapel = $('#mapel option:selected').val();
 						var idruang = $('#ruang option:selected').val();
 						var idkelas = $('#kelas option:selected').val();
-						$('#loadabsen').attr('src','absen.php?id_sesi='+idsesi+'&id_ruang='+idruang+'&id_mapel='+idmapel+'&id_kelas='+idkelas);
+						$('#loadabsen').attr('src','absen2.php?id_sesi='+idsesi+'&id_ruang='+idruang+'&id_mapel='+idmapel+'&id_kelas='+idkelas);
 						
 						
 					}

@@ -36,7 +36,7 @@
 	<tr>
 	<td  width="70" align="left"><img src="../'.$setting['logo'].'"  height=80></td>
     <td>
-	<b><center><font size="+1">DAFTAR HADIR PESERTA '.$ruang.' </font> 
+	<b><center><font size="+1">DAFTAR PESERTA '.$ruang.' </font> 
     <br><font size="+1">PENILAIAN AKHIR TAHUN BERBASIS ANDROID </font>
     <br><font size="+1"><b>TAHUN PELAJARAN : '. $ajaran.'</b></font>
 	</b>
@@ -46,27 +46,6 @@
     </table>
 	<hr>
 	
-	<table border="0" width="100%" style="margin-left:0px">
-	<tr height="30">
-	<td height="30" width="20%">-Mata Pelajaran</td>
-	<td height="30" width="2%">:</td>
-	<td height="30" width="45%" >'.$namamapel['nama_mapel'].'</td>
-	
-  
-	<td height="30" width="15%" style="margin-left:10px"> Sesi</td>
-    <td height="30" width="2%"> : </td>
-	<td height="30" width="15%">'.$sesi.'</td>
-	</tr>
-	<tr height="30">
-	<td height="30" width="20%">-Hari/Tanggal</td>
-	<td height="30" width="2%">:</td>
-	<td height="30" width="45%" >'.buat_tanggal('D, d M Y',$cektanggal['tgl_ujian']).'</td>
-	
-	<td height="30" width="20%" style="margin-left:10px"> Waktu Ujian </td>
-    <td height="30" width="1%">:</td>
-	<td height="30" width="20%" >'.buat_tanggal('H:i',$cektanggal['tgl_ujian']).'</td>
-	</tr>
-	</table>
 	
 	
 	
@@ -77,10 +56,8 @@
 	<tr height="40">
 	<th width="5%" style="text-align: center;">No.</th>
 	<th width="13%" style="text-align: center;">No. Ujian</th>
-	<th width="30%" style="text-align: center;">Nama Siswa</th>
-	<th width="12%" style="text-align: center;">Kelas</th>
-	<th width="24%"style="text-align: center;">Tanda Tangan</th>
-	<th colspan="2" width="7%" style="text-align: center;">Ket</th>
+	<th width="50%" style="text-align: center;">Nama Siswa</th>
+	<th width="20%" style="text-align: center;">Kelas</th>
 	</tr>';
 	$mulai = $i-1;
 	$batas = ($mulai*$jumlahn);
@@ -109,18 +86,14 @@
 	  <td align='center'>&nbsp;$nomer.</td>
 	  <td align='center'>$f[nis]</td>
 	  <td>&nbsp;$f[nama]</td>
-	  <td>&nbsp;$f[id_kelas]</td>
-	  <td align='center'>&nbsp;$nomer.</td>
-	  <td align='center'>&nbsp;</td>
+	  <td align='center'>&nbsp;$f[id_kelas]</td>
 	  </tr>";
 	  } else {
 	  echo "<tr height=30px>
 	  <td align='center'>&nbsp;$nomer.</td>
 	  <td align='center'>$f[nis]</td></center>
 	  <td>&nbsp;$f[nama]</td>
-	  <td>&nbsp;$f[id_kelas]</td>
-	  <td align='left'>&nbsp;$nomer.</td>
-	  <td align='center'>&nbsp;</td>
+	  <td align='center'>&nbsp;$f[id_kelas]</td>
 	  </tr>";
 	  }
 	  $nomer++;
@@ -131,32 +104,7 @@
 	';
 	}
 	echo '
-	<br>
-	1. Daftar hadir di buat rangkap 2 (dua).<br>
-	2. Pengawas ruang menyilang Nama Peserta yang tidak hadir.
-	<br>
-	<br>
-    
 	
-	<table  style="width:100%;" >
-	<td width="30%" style="padding:8px; text-align: left;font-size: small; border-top:thin solid #000000;border-left: thin solid #000000;">&nbsp; Jumlah Peserta yang Seharusnya Hadir</td>
-	<td width="2%" style="text-align: left;font-size: small; border-top:thin solid #000000"> : </td>
-	<td width="10%" style="text-align: left;font-size: small; border-top:thin solid #000000; border-right: thin solid #000000;"> ______ orang</td>
-	<td width="15%" style="font-size: small;text-align: center;"> Pengawas</td>
-	<td width="15%" style="font-size: small;text-align: center;">Proktor</td>
-	
-	</tr>
-	<td width="30%" style="padding:8px; text-align: left;font-size: small;border-bottom:thin solid #000000;border-left: thin solid #000000;">&nbsp; Jumlah Peserta yang Tidak Hadir</td>
-	<td width="2%" style="text-align: left;font-size: small;border-bottom:thin solid #000000"> : </td>
-	<td width="10%" style="text-align: left;font-size: small;border-bottom:thin solid #000000; border-right: thin solid #000000;"> ______ orang</td>
-	</tr>
-    <td width="30%" style="padding:8px; text-align: left;font-size: small;border-bottom:thin solid #000000;border-left: thin solid #000000;">&nbsp; Jumlah Peserta yang Hadir</td>
-	<td width="2%" style="text-align: left;font-size: small;border-bottom:thin solid #000000"> : </td>
-	<td width="10%" style="text-align: left;font-size: small;border-bottom:thin solid #000000; border-right: thin solid #000000;"> ______ orang</td>
-	<td width="15%" style="font-size: small;text-align: center;">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</td>
-	<td width="15%" style="font-size: small;text-align: center;">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</td></tr>
-    
-	</table>
 	
 	
 	
